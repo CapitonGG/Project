@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case_1</title>
+</head>
+<body>
+    <script>
+        'use strict';
+//Case 1
+        //variable declaration   
+        let min;
+        let max;
+        
+        //input of variables
+        min = prompt("Введите первое число");
+        max = prompt("Введите второе число");
+        min = Number(min);
+        
+        //function description
+        function getRandomNumber(min, max) {
+    return Math.random() * (max - min) + (min);
+  };
+
+   console.log(getRandomNumber(min, max));
+   console.log(typeof(getRandomNumber(min, max)));
+
+    </script>
+</body>
+</html>

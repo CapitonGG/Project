@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case_2</title>
+</head>
+<body>   
+    <script>
+        'use strict';
+//Case 2
+     //variable declaration 
+        let number;
+        let firstNumber;
+        let secondNumber;
+        let thirdNumber;
+        let fourthNumber;
+        let sum;
+        let multiplication;
+
+     // input of variables 
+        number = prompt("Введите четырехзначное число");
+
+     // mathematical operations
+        fourthNumber = number  % 10;
+        thirdNumber = number / 10 % 10;
+        secondNumber = number / 100 % 10;
+        firstNumber = number /1000 % 10;
+
+
+        sum = Math.trunc(firstNumber) + Math.trunc(secondNumber) + Math.trunc(thirdNumber) + Math.trunc(fourthNumber);
+        multiplication = Math.trunc(firstNumber) * Math.trunc(secondNumber) * Math.trunc(thirdNumber) * Math.trunc(fourthNumber);
+
+     // derivation of variables  
+        console.log("Сумма всех цифр =", sum);
+        console.log("Произведение всех цифр =", multiplication);
+
+
+    </script>
+</body>
+</html>

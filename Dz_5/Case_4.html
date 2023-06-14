@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case_4</title>
+</head>
+<body>
+    <script>
+        'use strict';  
+//Case 4
+    //variable declaration    
+        let objectWall = {};
+        let objectDoor = {};
+        let objectWindow = {};
+        let roomArea;
+      
+
+     // input of variables  
+        objectWall.height = prompt("Введите высоту стены в метрах");
+        objectWall.width = prompt("Введите ширину стены в метрах");  
+        objectDoor.height = prompt("Введите высоту двери в метрах");  
+        objectDoor.width = prompt("Введите ширину двери в метрах");  
+        objectWindow.height = prompt("Введите высоту окна в метрах");  
+        objectWindow.width = prompt("Введите ширину окна в метрах");  
+        objectWindow.quantity = prompt("Введите количество окон");  
+
+
+     // mathematical operations
+        roomArea = (4 *  objectWall.height * objectWall.width) - ((objectDoor.height * objectDoor.width) + (objectWindow.height * objectWindow.width * objectWindow.quantity));
+       
+
+     // derivation of variables
+        console.log(" Площадь стен для оклеивания их обоями =", roomArea, "метров");
+
+
+    </script>
+</body>
+</html>

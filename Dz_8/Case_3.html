@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case_3</title>
+</head>
+<body>    
+<script>
+      'use strict';
+//Case 3
+    //variable declaration 
+      let xFirstPoint;
+      let yFirstPoint;
+      let xSecondPoint;
+      let ySecondPoint;
+
+     // input of variables 
+    xFirstPoint = +prompt("Введите кардинату x для первой точки");
+    yFirstPoint = +prompt("Введите кардинату y для первой точки");
+
+    xSecondPoint = +prompt("Введите кардинату x для второй точки");
+    ySecondPoint = +prompt("Введите кардинату y для второй точки");
+
+     // determination of coordinates
+    if (xFirstPoint > 0  &&  yFirstPoint > 0) console.log("Точка 1 находится в первой четверти");
+    else if (xFirstPoint < 0  &&  yFirstPoint > 0) console.log("Точка 1 находится во второй четверти");
+    else if (xFirstPoint < 0  &&  yFirstPoint < 0) console.log("Точка 1 находится в третьей четверти");
+    else if (xFirstPoint > 0  &&  yFirstPoint < 0) console.log("Точка 1 находится в четвертой четверти");
+    else if (xFirstPoint == 0  &&  yFirstPoint == 0) console.log("Точка 1 находится в центре координат");
+    else if (xFirstPoint == 0  ) console.log("Точка 1 находится на оси X");
+    else if (yFirstPoint == 0) console.log("Точка 1 находится на оси Y");
+
+    if (xSecondPoint > 0  &&  ySecondPoint > 0) console.log("Точка 2 находится в первой четверти");
+    else if (xSecondPoint < 0  &&  ySecondPoint > 0) console.log("Точка 2 находится во второй четверти");
+    else if (xSecondPoint < 0  &&  ySecondPoint < 0) console.log("Точка 2 находится в третьей четверти");
+    else if (xSecondPoint > 0  &&  ySecondPoint < 0) console.log("Точка 2 находится в четвертой четверти");
+    else if (xSecondPoint == 0  &&  ySecondPoint == 0) console.log("Точка 2 находится в центре координат");
+    else if (xSecondPoint == 0  ) console.log("Точка 2 находится на оси X");
+    else if (ySecondPoint == 0) console.log("Точка 2 находится на оси Y");
+    
+     // distance determination
+    if (Math.sqrt(xFirstPoint**2+yFirstPoint**2) < Math.sqrt(xSecondPoint**2+ySecondPoint**2)) 
+    console.log("Вторая точка дальше от начала координат");
+    else if (Math.sqrt(xFirstPoint**2+yFirstPoint**2) > Math.sqrt(xSecondPoint**2+ySecondPoint**2)) 
+    console.log("Первая точка дальше т начала координат");
+    else if (Math.sqrt(xFirstPoint**2+yFirstPoint**2) == Math.sqrt(xSecondPoint**2+ySecondPoint**2))
+    console.log("Точки равноудалены от начала координат");
+
+</script>
+</body>
+</html>

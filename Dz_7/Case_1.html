@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case_1</title>
+</head>
+<body>
+    <script>
+    'use strict';
+//Case 1
+    //variable declaration 
+        let month;
+
+     // input of variables 
+        month = prompt("Введите номер месяца");
+
+     // fool proof and problem solving
+        if (month == null) console.log ("Дейсвие было отменено");
+        else if (month.trim() == "" ) console.log ("Значение не было введено");
+        else if (isNaN(Number(month))) console.log ("Было введено не число");
+        else if (month<=0 || month>=13) console.log ("Введено число не из диапозона");
+        else {
+            month = Number(month);
+            switch (month) {
+                case 1:
+                    console.log("Январь");
+                    break;
+                case 2:
+                    console.log("Февраль");
+                    break;
+                case 3:
+                    console.log("Март");
+                    break;
+                case 4:
+                    console.log("Апрель");
+                    break;
+                case 5:
+                    console.log("Май");
+                    break;
+                case 6:
+                    console.log("Июнь");
+                    break;
+                case 7:
+                    console.log("Июль");
+                    break;
+                case 8:
+                    console.log("Август");
+                    break;
+                case 9:
+                    console.log("Сентябрь");
+                    break;
+                case 10:
+                    console.log("Октябрь");
+                    break;
+                case 11:
+                    console.log("Ноябрь");
+                    break;
+                case 12:
+                    console.log("Декабрь");
+                    break;
+                default: 
+                    console.log("Ошибка");
+                                
+                };
+
+            }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case_2</title>
+</head>
+<body>
+    <script>
+       'use strict';
+
+       
+        let x;
+        let y;
+        let h;
+        let a;
+        let b;
+
+        while(true){
+            if (typeof a === "undefined"){
+                 a = prompt("Введите значение начала отрезка");
+            }
+            else if (a === null){
+                a = prompt("Выбор отменен. Введите значение начала отрезка");
+            }
+            else if (a.trim() === ""){
+                a = prompt("Введена пустая строка. Введите значение начала отрезка");
+            }
+            else if (isNaN(Number(a)) ){
+                a = prompt("Введено не число. Введите значение начала отрезка");
+            }
+            
+            else{
+           
+           break
+       };
+   };
+        while(true){
+            if (typeof b === "undefined"){;
+                 b = prompt("Введите значение конца отрезка");
+            }
+            else if (b === null){
+                b = prompt("Выбор отменен. Введите значение конца отрезка");
+            }
+            else if (b.trim() === ""){
+                b = prompt("Введена пустая строка. Введите значение конца отрезка");
+            }
+            else if (isNaN(Number(b)) ){
+                b = prompt("Введено не число. Введите значение конца отрезка");
+            }
+            else if (b<a){
+                b = prompt("Введено недопустимое значение. Введите значение начала отрезка");
+            }
+            else{
+           
+           break
+       };
+   };
+        while(true){
+            if (typeof h === "undefined"){;
+                 h = prompt("Введите значение шага");
+            }
+            else if (h === null){
+                h = prompt("Выбор отменен. Введите значение шага");
+            }
+            else if (h.trim() === ""){
+                h = prompt("Введена пустая строка. Введите значение шага");
+            }
+            else if (isNaN(Number(h)) ){
+                h = prompt("Введено не число. Введите значение шага");
+            }
+            else if ( h<=0 ){
+                h = prompt("Введено недопустимое значение. Введите значение шага");
+            }
+            else{
+           
+           break
+       };
+   };
+    
+   x = a;
+   x= Number(x);
+  do{
+    if (x<=-1){
+    y = (-x)**2 - 4*x - 3;
+   console.log("Значение x",x);
+   console.log("Значение y",y);
+  x = Number(x)+Number(h);
+    }
+  else if (x <= 1){
+    y = x + 1;
+    console.log("Значение x",x);
+   console.log("Значение y",y);
+  x = Number(x)+Number(h);
+  }
+  else if(x > 1){
+    y = 2/x;
+    console.log("Значение x",x);
+   console.log("Значение y",y);
+  x = Number(x)+Number(h);
+  }
+  else{
+           
+           break
+       };
+    } while (x <= b);
+
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let depositAmount;
+        let depositPercentage;
+
+
+        depositAmount = +prompt("Введите сумму вклада");
+        depositPercentage = +prompt("Введите процент вклада");
+
+        depositAmount = depositAmount + depositAmount * depositPercentage * 365 / 36500 ; //deposit amount for 2024
+        depositAmount = depositAmount + depositAmount * depositPercentage * 365 / 36600 ; //deposit amount for 2025
+        depositAmount = depositAmount + depositAmount * depositPercentage * 365 / 36500 ; //deposit amount for 2026
+        depositAmount = depositAmount + depositAmount * depositPercentage * 365 / 36500 ; //deposit amount for 2027
+        depositAmount = depositAmount + depositAmount * depositPercentage * 365 / 36500 ; //deposit amount for 2028
+
+    
+        console.log("Сумма на счету по окончанию вклада =", depositAmount);
+
+
+    </script>
+</body>
+</html>
